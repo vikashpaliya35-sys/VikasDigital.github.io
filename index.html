@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VikasDigital - AI डैशबोर्ड</title>
+    <style>
+        /* Modern Design System - Blue & Gold Theme */
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #fbbc04;
+            --ai-color: #9c27b0; /* AI के लिए पर्पल रंग */
+            --bg-color: #f9fbfd;
+            --text-color: #202124;
+            --card-bg: #ffffff;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            --card-radius: 12px;
+        }
+
+        * { box-sizing: border-box; font-family: sans-serif; margin: 0; padding: 0; }
+        body { background-color: var(--bg-color); color: var(--text-color); }
+
+        header { background: linear-gradient(135deg, var(--primary-color) 0%, #1557b0 100%); color: white; padding: 25px 20px; text-align: center; }
+        nav { background: white; padding: 10px; text-align: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        nav a { text-decoration: none; color: var(--text-color); padding: 10px 15px; font-weight: bold; }
+        
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px; max-width: 1200px; margin: auto; }
+        .card { background: white; padding: 25px; border-radius: var(--card-radius); box-shadow: var(--card-shadow); border-top: 4px solid var(--primary-color); }
+        
+        /* AI सेक्शन का विशेष रंग */
+        .card.ai { border-top-color: var(--ai-color); }
+        
+        h2 { margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .link-btn { display: block; background: var(--primary-color); color: white; padding: 12px; margin-bottom: 10px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center; }
+        .ai .link-btn { background: var(--ai-color); }
+        
+        footer { text-align: center; padding: 20px; color: #777; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>VikasDigital.com</h1>
+    <p>सरकारी सेवाएँ, टूल्स और AI की शक्ति</p>
+</header>
+
+<nav>
+    <a href="#gov">सरकारी</a> | <a href="#tools">टूल्स</a> | <a href="#ai">AI टूल्स</a>
+</nav>
+
+<div class="container">
+    <!-- सरकारी सेवाएँ -->
+    <div class="card" id="gov">
+        <h2>सरकारी सेवाएँ</h2>
+        <a href="https://pmayg.nic.in/" target="_blank" class="link-btn">प्रधानमंत्री आवास योजना</a>
+        <a href="https://uidai.gov.in/" target="_blank" class="link-btn">आधार कार्ड (UIDAI)</a>
+        <a href="https://www.pan.utiitsl.com/" target="_blank" class="link-btn">पैन कार्ड सेवा</a>
+        <a href="https://udyamregistration.gov.in/" target="_blank" class="link-btn">उद्यम रजिस्ट्रेशन (MSME)</a>
+    </div>
+
+    <!-- AI टूल्स (नया सेक्शन) -->
+    <div class="card ai" id="ai">
+        <h2>AI स्मार्ट टूल्स</h2>
+        <a href="https://www.bing.com/images/create" target="_blank" class="link-btn">AI इमेज जनरेटर (Bing)</a>
+        <a href="https://gemini.google.com/" target="_blank" class="link-btn">AI चैट असिस्टेंट (Gemini)</a>
+        <a href="https://translate.google.com/" target="_blank" class="link-btn">AI भाषा अनुवादक</a>
+    </div>
+
+    <!-- पर्सनल लॉकर -->
+    <div class="card" id="locker">
+        <h2>मेरा पर्सनल लॉकर</h2>
+        <a href="https://drive.google.com/" target="_blank" class="link-btn" style="background:#ea4335;">Google Drive खोलें</a>
+    </div>
+</div>
+
+<footer>&copy; 2026 VikasDigital.com</footer>
+
+</body>
+          </html>
+          
